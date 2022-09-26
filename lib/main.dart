@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/pages/home_page.dart';
+import 'package:flutter_ui/pages/login_page.dart';
+import 'package:flutter_ui/routes/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-          child: Center(
-            child: Container(
-        child: Text("Welcome to imran on flutter"),
-      ),
-          )),
+      debugShowCheckedModeBanner: false,
+      
+          routes: {
+            "/" : (context) =>LoginPage(),
+            MyRoutes.homeRoute: (context) => HomePage()
+          },
+       
     );
   }
 }

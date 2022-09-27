@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to imran on flutter"),
+          child: Text("Welcome to flutter card"),
 
         ),
       ),

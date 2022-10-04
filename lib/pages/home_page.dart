@@ -1,8 +1,6 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/widgets/drawer.dart';
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -21,15 +19,70 @@ class HomePage extends StatelessWidget {
           ),
           )
       ),
+    
+
       body: Center(
         child: Container(
-          child: Text("Welcome to flutter card"),
+          
+          child: GridView(
+            padding: const EdgeInsets.all(10),
+            children: [
+              Container(decoration: BoxDecoration(
+                borderRadius:BorderRadius.circular(20),color:Color.fromARGB(255, 76, 79, 112),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  Icon(Icons.home, size: 50, color: Colors.white,),
+                  Text("Home",style: TextStyle(color: Colors.white,fontSize: 30),)
+                ],
+              ),
+              ),
+               Container(decoration: BoxDecoration(
+                borderRadius:BorderRadius.circular(20),color:Color.fromARGB(255, 76, 79, 112),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  Icon(Icons.home, size: 50, color: Colors.white,),
+                  Text("Home",style: TextStyle(color: Colors.white,fontSize: 30),)
+                ],
+              ),
+              ),
+               Container(decoration: BoxDecoration(
+                borderRadius:BorderRadius.circular(20),color:Color.fromARGB(255, 76, 79, 112),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  Icon(Icons.home, size: 50, color: Colors.white,),
+                  Text("Home",style: TextStyle(color: Colors.white,fontSize: 30),)
+                ],
+              ),
+              ),
+               Container(decoration: BoxDecoration(
+                borderRadius:BorderRadius.circular(20),color:Color.fromARGB(255, 76, 79, 112),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+
+                  Icon(Icons.home, size: 50, color: Colors.white,),
+                  Text("Home",style: TextStyle(color: Colors.white,fontSize: 30),)
+                ],
+              ),
+              ),
+            ],
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,mainAxisSpacing: 10,crossAxisSpacing: 10),
+
+          )
 
         ),
       ),
-      drawer: MyDrawer(
-
-      ),
+      drawer: MyDrawer(),
     );
   }
 }

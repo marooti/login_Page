@@ -35,8 +35,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                  Icon(Icons.person, size: 80, color: Color.fromARGB(255, 123, 29, 22),),
-                  Text("Register patient",style: TextStyle(color: Colors.black,fontSize: 18),)
+                  Icon(Icons.person, size: 80, color: Color.fromARGB(255, 58, 145, 121),),
+                  Text("Invoice Orders",style: TextStyle(color: Colors.black,fontSize: 18),)
                 ],
               ),
               ),
@@ -47,8 +47,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                  Icon(Icons.assignment, size: 80, color: Color.fromARGB(255, 123, 29, 22),),
-                  Text("Record",style: TextStyle(color: Colors.black,fontSize: 18),)
+                  Icon(Icons.assignment, size: 80, color: Color.fromARGB(255, 58, 145, 121),),
+                  Text("New Patients",style: TextStyle(color: Colors.black,fontSize: 18),)
                 ],
               ),
               ),
@@ -59,8 +59,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                  Icon(Icons.house, size: 80, color: Color.fromARGB(255, 123, 29, 22),),
-                  Text("Detail of Patient",style: TextStyle(color: Colors.black,fontSize: 18),)
+                  Icon(Icons.house, size: 80, color: Color.fromARGB(255, 58, 145, 121),),
+                  Text("New Orders",style: TextStyle(color: Colors.black,fontSize: 18),)
                 ],
               ),
               ),
@@ -71,8 +71,8 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
 
-                  Icon(Icons.add_comment, size: 80, color: Color.fromARGB(255, 123, 29, 22),),
-                  Text("Add Patient",style: TextStyle(color: Colors.black,fontSize: 18),
+                  Icon(Icons.add_comment, size: 80, color: Color.fromARGB(255, 58, 145, 121),),
+                  Text("OPD Rate",style: TextStyle(color: Colors.black,fontSize: 18),
                   )
                 ],
               ),

@@ -26,19 +26,52 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+             ExpansionTile(
               leading: Icon(
-                CupertinoIcons.profile_circled,
+                CupertinoIcons.home,
                 color: Colors.white,
               ),
-              title: Text(
-                "Registerd patient",
-                textScaleFactor: 1.2,
-                style: TextStyle(
-                  color: Colors.white,
+          title: Text('Heading',
+          textScaleFactor: 1.2,
+          style: TextStyle(
+            color: Colors.white,
+          ),
+           
+          ),
+          children: <Widget>[
+            Center(
+              child: Padding(
+                padding: new EdgeInsets.only(
+                  left: 70,
+                ),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisSize: MainAxisSize.max,
+                    children: <Widget>[
+                      Text('subHeading1',
+                      textScaleFactor: 1.1,
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Text('subHeading1',
+                      textScaleFactor: 1.1,
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
+          ],
+        ),
             ListTile(
               leading: Icon(
                 CupertinoIcons.home,
